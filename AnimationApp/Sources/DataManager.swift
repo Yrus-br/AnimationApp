@@ -6,6 +6,7 @@
 //
 
 class DataManager {
+    
     let preset = [
         "pop",
         "slideLeft",

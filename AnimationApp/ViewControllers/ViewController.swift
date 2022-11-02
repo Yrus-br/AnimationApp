@@ -9,39 +9,42 @@ import UIKit
 import SpringAnimation
 
 class ViewController: UIViewController {
-
     
     @IBOutlet var AnimationView: SpringView!
     
     @IBOutlet var presetValue: UILabel!
-    
     @IBOutlet var curveValue: UILabel!
-    
     @IBOutlet var forceValue: UILabel!
-    
     @IBOutlet var durationValue: UILabel!
-    
     @IBOutlet var delayValue: UILabel!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
-
+    let currentAnimation = AnimationModel.getAnimationData()
+    private var animationIndex = 0
+    private var randomIndex = 0
+    
     @IBAction func ButtonForAnimation(_ sender: SpringButton) {
-        AnimationView.animation = "shake"
-        AnimationView.curve = "easyOut"
-        AnimationView.force = 2
-        AnimationView.duration = 2
-        AnimationView.delay = 0
+        AnimationView.animation = currentAnimation[animationIndex].animation
+        AnimationView.curve = currentAnimation[randomIndex].curve
+        AnimationView.force = currentAnimation[randomIndex].force
+        AnimationView.duration = currentAnimation[randomIndex].duration
+        AnimationView.delay = currentAnimation[randomIndex].delay
         AnimationView.animate()
         
+        if AnimationView.animation == "fall" {
+            AnimationView.force = CGFloat(Float.random(in: 0..<0.8))        }
+
+        randomIndex = Int.random(in: 0..<currentAnimation.count)
+        animationIndex += 1
+        if animationIndex == currentAnimation.count {
+            animationIndex = 0
+        }
+        
+        sender.setTitle("Run \(currentAnimation[animationIndex].animation)", for: .normal)
         presetValue.text = "\(AnimationView.animation)"
         curveValue.text = "\(AnimationView.curve)"
         forceValue.text = "\(AnimationView.force)"
         durationValue.text = "\(AnimationView.duration)"
         delayValue.text = "\(AnimationView.delay)"
-        
     }
 }
 
