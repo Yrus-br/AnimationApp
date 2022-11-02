@@ -19,11 +19,10 @@ class ViewController: UIViewController {
     @IBOutlet var delayValue: UILabel!
     
     let currentAnimation = AnimationModel.getAnimationData()
-    private var animationIndex = 0
     private var randomIndex = 0
     
     @IBAction func ButtonForAnimation(_ sender: SpringButton) {
-        AnimationView.animation = currentAnimation[animationIndex].animation
+        AnimationView.animation = currentAnimation[randomIndex].animation
         AnimationView.curve = currentAnimation[randomIndex].curve
         AnimationView.force = currentAnimation[randomIndex].force
         AnimationView.duration = currentAnimation[randomIndex].duration
@@ -31,12 +30,8 @@ class ViewController: UIViewController {
         AnimationView.animate()
 
         randomIndex = Int.random(in: 0..<currentAnimation.count)
-        animationIndex += 1
-        if animationIndex == currentAnimation.count {
-            animationIndex = 0
-        }
         
-        sender.setTitle("Run \(currentAnimation[animationIndex].animation)", for: .normal)
+        sender.setTitle("Run \(currentAnimation[randomIndex].animation)", for: .normal)
         presetValue.text = "\(AnimationView.animation)"
         curveValue.text = "\(AnimationView.curve)"
         forceValue.text = "\(AnimationView.force)"
