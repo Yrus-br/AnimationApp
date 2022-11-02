@@ -15,7 +15,7 @@ struct AnimationModel {
     static func getAnimationData() -> [AnimationModel] {
         
         var animations: [AnimationModel] = []
-
+        
         let preset = DataManager.shared.preset
         let curve = DataManager.shared.curve
         let force = DataManager.shared.force

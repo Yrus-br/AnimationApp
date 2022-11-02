@@ -29,9 +29,6 @@ class ViewController: UIViewController {
         AnimationView.duration = currentAnimation[randomIndex].duration
         AnimationView.delay = currentAnimation[randomIndex].delay
         AnimationView.animate()
-        
-        if AnimationView.animation == "fall" {
-            AnimationView.force = CGFloat(Float.random(in: 0..<0.8))        }
 
         randomIndex = Int.random(in: 0..<currentAnimation.count)
         animationIndex += 1

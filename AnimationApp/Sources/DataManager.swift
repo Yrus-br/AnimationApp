@@ -68,8 +68,9 @@ class DataManager {
         "easeOutBack",
         "easeInOutBack"
     ]
+    
     let force = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1]
-    let duration = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1]
+    let duration = [0.9, 1, 1.3, 1.5, 2, 2.5]
     let delay = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1]
     
     static let shared = DataManager()
