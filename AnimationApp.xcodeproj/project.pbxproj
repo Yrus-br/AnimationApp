@@ -51,12 +51,12 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		3FC34E852912D50300468A53 /* Sources */ = {
+		3FC34E852912D50300468A53 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				3FC34E802912D4DD00468A53 /* DataManager.swift */,
 			);
-			path = Sources;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		3FD091AB2912CAAE00782420 = {
@@ -78,7 +78,7 @@
 		3FD091B62912CAAE00782420 /* AnimationApp */ = {
 			isa = PBXGroup;
 			children = (
-				3FC34E852912D50300468A53 /* Sources */,
+				3FC34E852912D50300468A53 /* Services */,
 				3FC34E842912D4F600468A53 /* Models */,
 				3FD091CC2912CB0D00782420 /* App */,
 				3FD091CB2912CAFF00782420 /* ViewControllers */,
