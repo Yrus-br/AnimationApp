@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		3FC34E7F2912D47700468A53 /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = 3FC34E7E2912D47700468A53 /* SpringAnimation */; };
 		3FC34E812912D4DD00468A53 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC34E802912D4DD00468A53 /* DataManager.swift */; };
-		3FC34E832912D4F000468A53 /* AnimationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC34E822912D4F000468A53 /* AnimationModel.swift */; };
+		3FC34E832912D4F000468A53 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC34E822912D4F000468A53 /* Animation.swift */; };
 		3FD091B82912CAAF00782420 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD091B72912CAAF00782420 /* AppDelegate.swift */; };
 		3FD091BA2912CAAF00782420 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD091B92912CAAF00782420 /* SceneDelegate.swift */; };
 		3FD091BC2912CAAF00782420 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD091BB2912CAAF00782420 /* ViewController.swift */; };
@@ -20,7 +20,7 @@
 
 /* Begin PBXFileReference section */
 		3FC34E802912D4DD00468A53 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		3FC34E822912D4F000468A53 /* AnimationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationModel.swift; sourceTree = "<group>"; };
+		3FC34E822912D4F000468A53 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		3FD091B42912CAAE00782420 /* AnimationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD091B72912CAAF00782420 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FD091B92912CAAF00782420 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		3FC34E842912D4F600468A53 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				3FC34E822912D4F000468A53 /* AnimationModel.swift */,
+				3FC34E822912D4F000468A53 /* Animation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -196,7 +196,7 @@
 				3FC34E812912D4DD00468A53 /* DataManager.swift in Sources */,
 				3FD091B82912CAAF00782420 /* AppDelegate.swift in Sources */,
 				3FD091BA2912CAAF00782420 /* SceneDelegate.swift in Sources */,
-				3FC34E832912D4F000468A53 /* AnimationModel.swift in Sources */,
+				3FC34E832912D4F000468A53 /* Animation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
